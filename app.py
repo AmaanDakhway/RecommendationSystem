@@ -22,10 +22,10 @@ def home():
 @app.route('/api/', methods=['POST'])
 def process_request():
     # Parse received JSON request
-    user_input = request.get_json()
+    # user_input = request.get_json()
 
     # Extract show title
-    title = user_input['course']
+    title = request.form.get('course')
     # # Call recommendation engine
     recommended_shows_dict = recommended_shows(title, netflix_titles_df, tfidf_vect_pkl)
     # return jsonify(title)
