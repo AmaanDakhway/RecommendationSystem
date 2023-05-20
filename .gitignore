@@ -5,4 +5,4 @@ recommendation_api_env/
 __pycache__/
 
 #Ignoring shows_vectorizer as the API will load tfidf_vectorizer.pickle not generate it from scratch
-shows_vectorizer.py
+crouse_vectorizer.py
